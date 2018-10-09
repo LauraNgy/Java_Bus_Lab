@@ -9,18 +9,18 @@ public class BusStopTest {
     Person person;
 
     @Before
-    public void before(){
+    public void before() {
         busStop = new BusStop("Princess Street");
         person = new Person();
     }
 
     @Test
-    public void addPersonToQueue(){
+    public void addPersonToQueue() {
         busStop.addPersonToQueue(person);
         assertEquals(1, busStop.queueCount());
     }
     @Test
-    public void removePersonFromQueue(){
+    public void removePersonFromQueue() {
         busStop.addPersonToQueue(person);
         assertEquals(1, busStop.queueCount());
         busStop.removePersonFromQueue(person);

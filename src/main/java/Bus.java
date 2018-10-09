@@ -4,7 +4,7 @@ public class Bus {
 
     private String destination;
     private int capacity;
-    private ArrayList<Person>passengers;
+    private ArrayList<Person> passengers;
 
     public Bus(String destination, int capacity){
         this.destination = destination;
@@ -18,7 +18,7 @@ public class Bus {
     }
 
     public void addPassenger(Person person) {
-        if( passengerCount() < capacity){
+        if ( passengerCount() < capacity) {
             passengers.add(person);
         }
     }
@@ -29,7 +29,7 @@ public class Bus {
 
     public void pickUp(BusStop busStop, Person person) {
       busStop.removePersonFromQueue(person);
-        passengers.add(person);
+      passengers.add(person);
 
     }
 }
